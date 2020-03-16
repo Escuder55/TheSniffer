@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     #region VARIABLES
     [SerializeField] float moveSpeed = 5;
-    [SerializeField] Rigidbody rb;
+    public Rigidbody rb;
     public Joystick joystick;
     Vector3 movement;
     #endregion

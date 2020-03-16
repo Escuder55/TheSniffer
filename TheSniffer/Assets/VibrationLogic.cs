@@ -4,26 +4,29 @@ using UnityEngine;
 
 public class VibrationLogic : MonoBehaviour
 {
+    #region VARIABLES
     Transform player;
     public float timeIntensity;
     public float maxDistance;
     public float minDistance;
     public int numOfRanges = 4;
-    int currentRange = 1;
-    
+    int currentRange = 1;  
 
     float rangeDistance;
     float distanceToTarget = 0;
     float timer = 0;
+    #endregion
 
+    #region START
     void Start()
     {
         player = GameObject.Find("Character").transform;
 
         rangeDistance = (maxDistance - minDistance) / numOfRanges;
     }
+    #endregion
 
-    // Update is called once per frame
+    #region UPDATE
     void Update()
     {
         distanceToTarget = Vector3.Distance(this.transform.position, player.position);
@@ -56,12 +59,16 @@ public class VibrationLogic : MonoBehaviour
             timer = 0;
         }
     }
+    #endregion
 
+    #region DRAW GIZMOS
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(this.transform.position, maxDistance);
     }
+    #endregion
 
+    #region TRIGGER ENTER
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -69,4 +76,5 @@ public class VibrationLogic : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    #endregion
 }
