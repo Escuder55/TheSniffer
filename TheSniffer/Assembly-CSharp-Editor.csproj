@@ -65,25 +65,25 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Editor\JoystickEditor.cs" />
     <Compile Include="Assets\Joystick Pack\Scripts\Editor\VariableJoystickEditor.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Editor">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Editor.dll</HintPath>
     </Reference>
     <Reference Include="XiaomiSupport">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/XiaomiSupport.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -319,38 +319,38 @@
     <Reference Include="UnityEditor.iOS.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.LinuxStandalone.Extensions">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.OSXStandalone.Extensions">
-      <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.purchasing@2.0.3/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="ChannelPurchase">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/ChannelPurchase.dll</HintPath>
     </Reference>
     <Reference Include="UnityStore">
-      <HintPath>G:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
