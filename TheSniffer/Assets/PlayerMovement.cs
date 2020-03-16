@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     #region VARIABLES
     [SerializeField] float moveSpeed = 5;
-    [SerializeField] Rigidbody2D rb;
+    [SerializeField] Rigidbody rb;
     public Joystick joystick;
-    Vector2 movement;
+    Vector3 movement;
     #endregion
 
     // Update is called once per frame
@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
         //input mobil
         movement.x = joystick.Horizontal;
         movement.y = joystick.Vertical;
+        movement.z = 0;
     }
 
     private void FixedUpdate()
