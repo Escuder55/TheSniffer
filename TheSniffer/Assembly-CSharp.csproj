@@ -297,6 +297,9 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -311,9 +314,6 @@
     </Reference>
     <Reference Include="UnityStore">
       <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

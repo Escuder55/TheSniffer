@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/TheSniffer.apk
+D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/TheSniffer2.apk
 SceneListBegin?
 Assets/Scenes/Sergio.unity
 SceneListEnd?
@@ -122,8 +122,11 @@ b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 a318a82d5abde553e75543c7b3aba918 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings
 ce669872a2be11bc686ea22961d8a3bb Assembly-CSharp.dll:.FloatingJoystick
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
+4c5d9f7285eb448028cac682e3037c52 Assembly-CSharp.dll:.FollowCharacter
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
+704dcd31abc789439bc3f3cd10b58c2b DOTween.dll:DG.Tweening.Core.DOTweenComponent
+3043290b08d2ce331b80366f9694a5c5 DOTween.dll:DG.Tweening.Core.DOTweenSettings
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -167,6 +170,3 @@ d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 9dac16f3efc511835ac976dfae55f580 Assembly-CSharp.dll:.VariableJoystick
-4c5d9f7285eb448028cac682e3037c52 Assembly-CSharp.dll:.FollowCharacter
-704dcd31abc789439bc3f3cd10b58c2b DOTween.dll:DG.Tweening.Core.DOTweenComponent
-3043290b08d2ce331b80366f9694a5c5 DOTween.dll:DG.Tweening.Core.DOTweenSettings

@@ -325,6 +325,12 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTweenEditor">
+      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -345,12 +351,6 @@
     </Reference>
     <Reference Include="UnityStore">
       <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTweenEditor">
-      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/THE_SNIFFER/TheSniffer/TheSniffer/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
