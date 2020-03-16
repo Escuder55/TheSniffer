@@ -7,15 +7,20 @@ public class PlayerMovement : MonoBehaviour
     #region VARIABLES
     [SerializeField] float moveSpeed = 5;
     [SerializeField] Rigidbody2D rb;
+    public Joystick joystick;
     Vector2 movement;
     #endregion
 
     // Update is called once per frame
     void Update()
     {
-        //input   
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        //input teclado
+        //movement.x = Input.GetAxisRaw("Horizontal");
+        //movement.y = Input.GetAxisRaw("Vertical");
+
+        //input mobil
+        movement.x = joystick.Horizontal;
+        movement.y = joystick.Vertical;
     }
 
     private void FixedUpdate()
