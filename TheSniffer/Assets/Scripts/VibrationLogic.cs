@@ -33,12 +33,10 @@ public class VibrationLogic : MonoBehaviour
 
         if (distanceToTarget <= maxDistance)
         {
-            Debug.Log("HA DE VIBRAR, PERO CUANTO?");
             for (int i = 1; i <= numOfRanges; i++)
             {
                 if (distanceToTarget <= maxDistance && distanceToTarget >= maxDistance - rangeDistance * i)
                 {
-                    Debug.Log("Estas en el Rango: " + i);
                     currentRange = i;
                     break;
                 }
@@ -49,7 +47,6 @@ public class VibrationLogic : MonoBehaviour
             if (timer >= timeIntensity/currentRange)
             {
                 Handheld.Vibrate();
-                Debug.Log("VIBRAAAAA!!!");
                 timer = 0;
             }
 

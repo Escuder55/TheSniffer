@@ -3945,7 +3945,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0, g: 0.28616348, b: 0.735849, a: 0}
+  m_BackGroundColor: {r: 0.37112856, g: 0.4468114, b: 0.5660378, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -11857,8 +11857,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.65785867, y: 0.93172765, z: 1}
-  m_Center: {x: -0.05702365, y: -0.06827155, z: 0}
+  m_Size: {x: 0.45797747, y: 0.80085593, z: 1}
+  m_Center: {x: -0.048695207, y: -0.08385159, z: 0}
 --- !u!23 &1776250135
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14252,17 +14252,17 @@ PrefabInstance:
     - target: {fileID: 1077507819401310251, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 243.3
+      value: 204.3
       objectReference: {fileID: 0}
     - target: {fileID: 1077507819401310251, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 219
+      value: 160
       objectReference: {fileID: 0}
     - target: {fileID: 1077507819401310251, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 243.3
+      value: 204.3
       objectReference: {fileID: 0}
     - target: {fileID: 1077507820190839761, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
@@ -14277,12 +14277,12 @@ PrefabInstance:
     - target: {fileID: 1077507820190839761, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 153.69
+      value: 124.8
       objectReference: {fileID: 0}
     - target: {fileID: 1077507820190839761, guid: 50f88b5708efa1b4ea8585242263afd5,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 153.7
+      value: 124.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50f88b5708efa1b4ea8585242263afd5, type: 3}
@@ -14373,6 +14373,26 @@ PrefabInstance:
       propertyPath: rb
       value: 
       objectReference: {fileID: 157883662}
+    - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420031}
+    - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: timeConcentration
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: speedTransition
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: newFov
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3371859760256008656, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
