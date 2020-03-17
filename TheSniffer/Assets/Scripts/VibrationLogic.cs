@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VibrationLogic : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class VibrationLogic : MonoBehaviour
     float rangeDistance;
     float distanceToTarget = 0;
     float timer = 0;
+
+    [Header("SNIFF BAR")]
+    [SerializeField] Image sniffBar;
+    [SerializeField] Transform arrow;
     #endregion
 
     #region START
@@ -33,12 +38,13 @@ public class VibrationLogic : MonoBehaviour
 
         if (distanceToTarget <= maxDistance)
         {
-            Debug.Log("HA DE VIBRAR, PERO CUANTO?");
+            arrow.LookAt(this.transform.position);
+            sniffBar.fillAmount = (10 -distanceToTarget) / 10;
+
             for (int i = 1; i <= numOfRanges; i++)
             {
                 if (distanceToTarget <= maxDistance && distanceToTarget >= maxDistance - rangeDistance * i)
                 {
-                    Debug.Log("Estas en el Rango: " + i);
                     currentRange = i;
                     break;
                 }
@@ -49,7 +55,6 @@ public class VibrationLogic : MonoBehaviour
             if (timer >= timeIntensity/currentRange)
             {
                 Handheld.Vibrate();
-                Debug.Log("VIBRAAAAA!!!");
                 timer = 0;
             }
 
