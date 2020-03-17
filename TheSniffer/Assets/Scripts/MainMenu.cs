@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        //SceneManager.LoadScene("IgnacioScene");
+        SceneManager.LoadScene("Sergio");
         Debug.Log("Tengo que abrir escena");
     }
 
