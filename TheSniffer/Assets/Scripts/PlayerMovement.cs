@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float timeConcentration= 1.5f;
     [SerializeField] float speedTransition = 1.5f;
     [SerializeField] float newFov = 8f;
+    [SerializeField] GameObject sniffBar;
+    [SerializeField] GameObject arrow;
     bool isConcentrate = false;
     float initialFov;
     float timer = 0;
@@ -46,6 +48,8 @@ public class PlayerMovement : MonoBehaviour
             if (timer >= timeConcentration && !isConcentrate)
             {
                 isConcentrate = true;
+                sniffBar.SetActive(true);
+                arrow.SetActive(true);
                 mainCamera.DOOrthoSize(newFov, speedTransition);
             }
             else
@@ -58,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
         {
             timer = 0;
             isConcentrate = false;
+            sniffBar.SetActive(false);
+            arrow.SetActive(false);
             mainCamera.DOOrthoSize(initialFov, speedTransition);
         }
     }
