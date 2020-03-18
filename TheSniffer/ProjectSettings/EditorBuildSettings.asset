@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 6b0ec21c08aca974c9aa5294c96fb39c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MartiScene.unity
     guid: b6187d4042aaaac419420a801755d0bf
   - enabled: 1
