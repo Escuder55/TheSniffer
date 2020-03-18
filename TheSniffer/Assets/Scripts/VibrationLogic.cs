@@ -19,7 +19,6 @@ public class VibrationLogic : MonoBehaviour
 
     [Header("SNIFF BAR")]
     [SerializeField] Image sniffBar;
-    [SerializeField] Transform arrow;
     #endregion
 
     #region START
@@ -38,7 +37,6 @@ public class VibrationLogic : MonoBehaviour
 
         if (distanceToTarget <= maxDistance)
         {
-            arrow.LookAt(this.transform.position);
             sniffBar.fillAmount = (10 -distanceToTarget) / 10;
 
             for (int i = 1; i <= numOfRanges; i++)
@@ -78,6 +76,7 @@ public class VibrationLogic : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            sniffBar.fillAmount = 0;
             Destroy(this.gameObject);
         }
     }
