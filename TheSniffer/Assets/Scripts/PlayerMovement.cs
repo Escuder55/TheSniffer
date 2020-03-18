@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
     bool isConcentrate = false;
     float initialFov;
     float timer = 0;
+
+    [Header("ANIMATION")]
+    [SerializeField] Animator animator;
     #endregion
 
     #region START
@@ -43,13 +46,13 @@ public class PlayerMovement : MonoBehaviour
         movement.y = joystick.Vertical;
         movement.z = 0;
 
+        ////SNIFF LOGIC
         if (movement == new Vector3(0,0,0))
         {            
             if (timer >= timeConcentration && !isConcentrate)
             {
                 isConcentrate = true;
                 sniffBar.SetActive(true);
-                arrow.SetActive(true);
                 mainCamera.DOOrthoSize(newFov, speedTransition);
             }
             else
@@ -57,15 +60,18 @@ public class PlayerMovement : MonoBehaviour
                 timer += Time.deltaTime;
             }
         }
-
         if (isConcentrate && movement != new Vector3(0, 0, 0))
         {
             timer = 0;
             isConcentrate = false;
             sniffBar.SetActive(false);
-            arrow.SetActive(false);
             mainCamera.DOOrthoSize(initialFov, speedTransition);
         }
+
+        ///ANIMATION LOGIC
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
     }
 
     #endregion

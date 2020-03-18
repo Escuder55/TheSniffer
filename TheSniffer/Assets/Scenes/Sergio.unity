@@ -871,6 +871,38 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3371859760378935391}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &157883660
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157883659}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.25, y: 0.39, z: 0.46902293}
+  m_Center: {x: 0, y: 0, z: 0.044354253}
+--- !u!95 &157883661
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157883659}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d98a8f394a83a3340a46dbd8fefd563e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &157883662
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -887,19 +919,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!65 &157883664
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157883659}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 3.5800002, y: 7.120001, z: 3.3290057}
-  m_Center: {x: 0, y: 0, z: 0.12177616}
 --- !u!1 &159386680
 GameObject:
   m_ObjectHideFlags: 0
@@ -5399,7 +5418,6 @@ MonoBehaviour:
   minDistance: 0
   numOfRanges: 6
   sniffBar: {fileID: 553247062}
-  arrow: {fileID: 671642179}
 --- !u!135 &603972482
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6361,7 +6379,6 @@ MonoBehaviour:
   minDistance: 0
   numOfRanges: 6
   sniffBar: {fileID: 553247062}
-  arrow: {fileID: 671642179}
 --- !u!135 &724589892
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9714,7 +9731,6 @@ MonoBehaviour:
   minDistance: 0
   numOfRanges: 6
   sniffBar: {fileID: 553247062}
-  arrow: {fileID: 671642179}
 --- !u!135 &1214623432
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16629,6 +16645,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3371859760256008658, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371859760256008658, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371859760256008658, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
         type: 3}
       propertyPath: joystick
@@ -16674,6 +16705,18 @@ PrefabInstance:
       propertyPath: arrow
       value: 
       objectReference: {fileID: 2121777401}
+    - target: {fileID: 3371859760256008657, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 157883661}
+    - target: {fileID: 3371859760256008659, guid: 4fd64b5c30cb93d4795708266b31d1c3,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300002, guid: 01a732a2b92cb9441a88b77e8f642515,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 3371859760256008656, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
+    - {fileID: 3371859760256008655, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
