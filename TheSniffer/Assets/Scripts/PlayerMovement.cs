@@ -11,10 +11,10 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody rb;
     public Joystick joystick;
     Vector3 movement;
-    
+
     [Header("CONCENTRATION")]
     [SerializeField] Camera mainCamera;
-    [SerializeField] float timeConcentration= 1.5f;
+    [SerializeField] float timeConcentration = 1.5f;
     [SerializeField] float speedTransition = 1.5f;
     [SerializeField] float newFov = 8f;
     [SerializeField] GameObject sniffBar;
@@ -47,8 +47,8 @@ public class PlayerMovement : MonoBehaviour
         movement.z = 0;
 
         ////SNIFF LOGIC
-        if (movement == new Vector3(0,0,0))
-        {            
+        if (movement == new Vector3(0, 0, 0))
+        {
             if (timer >= timeConcentration && !isConcentrate)
             {
                 isConcentrate = true;
@@ -83,4 +83,5 @@ public class PlayerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
     #endregion
+
 }

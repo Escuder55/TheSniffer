@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 246697297007994146}
   - component: {fileID: 246697297007994169}
   - component: {fileID: 246697297007994151}
+  - component: {fileID: 686312255172448762}
+  - component: {fileID: 2306692552704261221}
   m_Layer: 0
   m_Name: UpLocker
   m_TagString: Untagged
@@ -125,5 +127,35 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.48999998, y: 1.24, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.48999998, y: 0.4261552, z: 0.2}
+  m_Center: {x: 0, y: 0.30395338, z: 0}
+--- !u!114 &686312255172448762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246697297007994147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2cc2240b1fcb314bb8263146d4396ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeIntensity: 0
+  maxDistance: 5
+  minDistance: 0
+  numOfRanges: 4
+  sniffBar: {fileID: 0}
+--- !u!65 &2306692552704261221
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246697297007994147}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49866596, y: 0.27071545, z: 0.19999999}
+  m_Center: {x: -0.00021918688, y: -0.066556156, z: 0}

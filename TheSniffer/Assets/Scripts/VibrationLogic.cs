@@ -25,7 +25,6 @@ public class VibrationLogic : MonoBehaviour
     void Start()
     {
         player = GameObject.Find("Character").transform;
-
         rangeDistance = (maxDistance - minDistance) / numOfRanges;
     }
     #endregion
@@ -72,13 +71,9 @@ public class VibrationLogic : MonoBehaviour
     #endregion
 
     #region TRIGGER ENTER
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
+    public void ZeroSniffBar()
+    {        
             sniffBar.fillAmount = 0;
-            Destroy(this.gameObject);
-        }
     }
     #endregion
 }

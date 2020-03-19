@@ -9,11 +9,23 @@ public class LockerScript : MonoBehaviour
     float aux = 0f;
     bool isSelected=false;
     bool _checked=false;
-    bool hasObject = false;
+    [SerializeField] bool hasObject = false;
+    VibrationLogic myVibrationLogic;
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = this.GetComponent<Animator>();
+        myVibrationLogic = this.GetComponent<VibrationLogic>();
+        if (!hasObject)
+        {
+            myVibrationLogic.enabled = false;
+        }
+    }
+
+    public void setUp(bool _hasObject)
+    {
+        hasObject = _hasObject;
+        
     }
 
     private void FixedUpdate()
@@ -29,20 +41,18 @@ public class LockerScript : MonoBehaviour
 
                 if (hasObject)
                 {
-                    //Spawn Object / give points
+                    Debug.Log("SumarPuntuacion");
+
+                    myVibrationLogic.ZeroSniffBar();
+                    myVibrationLogic.enabled = false;
                 }
             }
-        }
-
-        if (hasObject)
-        {
-            //code that modify progressBar
         }
     }
 
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.tag == "Player")
+        if (collision.tag == "DogTrigger")
         {
             isSelected = true;
             myAnimator.SetBool("Selected",true);
@@ -51,7 +61,7 @@ public class LockerScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "DogTrigger")
         {
             isSelected = false;
             myAnimator.SetBool("Selected", false);
