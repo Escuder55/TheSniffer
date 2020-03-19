@@ -66,7 +66,7 @@ public class VibrationLogic : MonoBehaviour
     #region DRAW GIZMOS
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(this.transform.position, maxDistance);
+        //Gizmos.DrawWireSphere(this.transform.position, maxDistance);
     }
     #endregion
 

@@ -5,17 +5,19 @@ using UnityEngine;
 public class LockerScript : MonoBehaviour
 {
     Animator myAnimator;
+    GameManager myGameManager;
     [SerializeField] float maxTime = 2f;
     float aux = 0f;
     bool isSelected=false;
     bool _checked=false;
-    [SerializeField] bool hasObject = false;
+    public bool hasObject = false;
     VibrationLogic myVibrationLogic;
     // Start is called before the first frame update
     void Start()
     {
         myAnimator = this.GetComponent<Animator>();
         myVibrationLogic = this.GetComponent<VibrationLogic>();
+        myGameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         if (!hasObject)
         {
             myVibrationLogic.enabled = false;
@@ -41,8 +43,7 @@ public class LockerScript : MonoBehaviour
 
                 if (hasObject)
                 {
-                    Debug.Log("SumarPuntuacion");
-
+                    myGameManager.objectFound();
                     myVibrationLogic.ZeroSniffBar();
                     myVibrationLogic.enabled = false;
                 }
