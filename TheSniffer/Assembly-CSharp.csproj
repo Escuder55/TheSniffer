@@ -158,6 +158,7 @@
     <Compile Include="Assets\Lean\Transition\Scripts\LeanStateWithTarget.cs" />
     <Compile Include="Assets\Lean\Transition\Scripts\LeanTiming.cs" />
     <Compile Include="Assets\Lean\Transition\Scripts\LeanTransition.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\FollowCharacter.cs" />
     <Compile Include="Assets\Scripts\LockerScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />

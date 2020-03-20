@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     GameObject [] myLockers;
     int totalObjects = 0;
     int objectsFound = 0;
-    float countdownTimer=10;
+    float countdownTimer=100;
     [SerializeField] GameObject youLose;
     [SerializeField] GameObject youWin;
     // Start is called before the first frame update

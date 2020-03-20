@@ -8,6 +8,9 @@ TagManager:
   - DogTrigger
   - Locker
   - GameManager
+  - MoveSpot
+  - MoveSpot2
+  - MoveSpot3
   layers:
   - Default
   - TransparentFX
