@@ -5,9 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     GameObject [] myLockers;
-    int totalObjects = 0;
-    int objectsFound = 0;
-    float countdownTimer=10;
+    int totalObjects = 0; //OBJETOS TOTALES
+    int objectsFound = 0; //OBJETOS ENCONTRADOS
+    float countdownTimer=10; //TIEMPO EN ESCENA
     [SerializeField] GameObject youLose;
     [SerializeField] GameObject youWin;
     // Start is called before the first frame update
