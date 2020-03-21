@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     GameObject [] myLockers;
     int totalObjects = 0; //OBJETOS TOTALES
     int objectsFound = 0; //OBJETOS ENCONTRADOS
-    float countdownTimer = 9; //TIEMPO EN ESCENA
+    [SerializeField] float countdownTimer = 9; //TIEMPO EN ESCENA
     [SerializeField] GameObject youLose;
     [SerializeField] GameObject youWin;
     // Start is called before the first frame update

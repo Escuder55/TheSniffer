@@ -12,6 +12,14 @@ public class PauseMenu : MonoBehaviour
     public GameObject Joystick;
     public GameObject SniffBar;
 
+    [HideInInspector]
+    public PlayerMovement player;
+    [SerializeField] VibrationLogic[] vibrations;
+
+    private void Start()
+    {
+        player = GameObject.Find("Character").GetComponent<PlayerMovement>();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -32,10 +40,19 @@ public class PauseMenu : MonoBehaviour
     {
         pauseMenuUI.SetActive(false);
         Joystick.SetActive(true);
-        SniffBar.SetActive(true);
+        if (player.isConcentrate)
+        {
+            SniffBar.SetActive(true);
+        }        
         Time.timeScale = 1f;
         GameIsPaused = false;
         gameAudio.GetComponent<AudioSource>().UnPause();
+
+        player.isPaused = false;
+        for (int i = 0; i < vibrations.Length; i++)
+        {
+            vibrations[i].isPaused = false;
+        }
     }
 
     public void Pause()
@@ -46,6 +63,12 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
         gameAudio.GetComponent<AudioSource>().Pause();
+
+        player.isPaused = true;
+        for (int i = 0; i < vibrations.Length; i++)
+        {
+            vibrations[i].isPaused = true;
+        }
     }
 
     public void LoadMenu()
