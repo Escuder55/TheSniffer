@@ -9,6 +9,8 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     public GameObject gameAudio;
+    public GameObject Joystick;
+    public GameObject SniffBar;
 
     // Update is called once per frame
     void Update()
@@ -29,6 +31,8 @@ public class PauseMenu : MonoBehaviour
     public void Resume()
     {
         pauseMenuUI.SetActive(false);
+        Joystick.SetActive(true);
+        SniffBar.SetActive(true);
         Time.timeScale = 1f;
         GameIsPaused = false;
         gameAudio.GetComponent<AudioSource>().UnPause();
@@ -37,6 +41,8 @@ public class PauseMenu : MonoBehaviour
     public void Pause()
     {
         pauseMenuUI.SetActive(true);
+        Joystick.SetActive(false);
+        SniffBar.SetActive(false);
         Time.timeScale = 0f;
         GameIsPaused = true;
         gameAudio.GetComponent<AudioSource>().Pause();

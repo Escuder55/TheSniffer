@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     GameObject [] myLockers;
     int totalObjects = 0; //OBJETOS TOTALES
     int objectsFound = 0; //OBJETOS ENCONTRADOS
-    float countdownTimer = 120; //TIEMPO EN ESCENA
+    float countdownTimer = 9; //TIEMPO EN ESCENA
     [SerializeField] GameObject youLose;
     [SerializeField] GameObject youWin;
     // Start is called before the first frame update
@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     [Header("HUD")]
     [SerializeField] Text objectsText;
     [SerializeField] Text timeHUDText;
+    [SerializeField] GameObject Joystick;
+    [SerializeField] GameObject Sniffbar;
 
     //TIEMPO
     int min;
@@ -66,10 +68,17 @@ public class GameManager : MonoBehaviour
         if (objectsFound == totalObjects)
         {
             youWin.SetActive(true);
+            Joystick.SetActive(false);
+            Sniffbar.SetActive(false);
+            countdownTimer = 0;
         }
         else
+        {
             youLose.SetActive(true);
-
+            Joystick.SetActive(false);
+            Sniffbar.SetActive(false);
+            countdownTimer = 0;
+        }
     }
 
     public void objectFound()
