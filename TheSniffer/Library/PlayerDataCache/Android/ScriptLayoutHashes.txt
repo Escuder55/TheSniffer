@@ -1,12 +1,11 @@
 Android
 PlayerPath?
-D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/TheSnifferWithMenu.apk
+D:/UNI/CUARTO/MECÁNICAS AVANZADAS/LUCAS/TheSnifferWithSelectionCharacter.apk
 SceneListBegin?
-Assets/Scenes/MartiScene.unity
 Assets/Scenes/Sergio.unity
 SceneListEnd?
 ce669872a2be11bc686ea22961d8a3bb Assembly-CSharp.dll:.Joystick
-c75c1d44a451863bbcf50e0afa6cea41 Assembly-CSharp.dll:.VibrationLogic
+70c9b5da4d1052779a81870036b77955 Assembly-CSharp.dll:.VibrationLogic
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 42bdfa9c19fa0e22d271f8494a697258 Assembly-CSharp.dll:Lean.Transition.Method.LeanTransformLocalPositionZ
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -65,8 +64,6 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 ff4ed0277d894331a213aecd8eebedee Assembly-CSharp.dll:Lean.Gui.LeanSafeArea
 b31ef1c110c5a7ed74ad67be3ae59038 Unity.TextMeshPro.dll:TMPro.TMP_InputField
 3eec3d0f549eeeef6b133056a3e1f91a Assembly-CSharp.dll:Lean.Transition.Method.LeanRectTransformAnchoredPositionY
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
-71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 a1fcc866397a836af63817d24343caca Assembly-CSharp.dll:Lean.Common.Examples.LeanDocumentation
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -144,7 +141,7 @@ d23fe1116d9f4a594394be43010680a3 Assembly-CSharp.dll:Lean.Gui.LeanToggle
 99ccdc335ab6ab11c24e05039f42ee96 Assembly-CSharp.dll:Lean.Transition.Method.LeanRectTransformPivotY
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 99ccdc335ab6ab11c24e05039f42ee96 Assembly-CSharp.dll:Lean.Transition.Method.LeanRectTransformPivotX
-a4c9422ce212d5d9d8bfcb3c90596ba7 Assembly-CSharp.dll:.PlayerMovement
+9fed76b7a3efd215d2379619fabfef9f Assembly-CSharp.dll:.PlayerMovement
 1037d908b125cb9db434b531e9a9739d Assembly-CSharp.dll:Lean.Gui.LeanSwipe
 d23fe1116d9f4a594394be43010680a3 Assembly-CSharp.dll:Lean.Gui.LeanWindow
 a318a82d5abde553e75543c7b3aba918 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings

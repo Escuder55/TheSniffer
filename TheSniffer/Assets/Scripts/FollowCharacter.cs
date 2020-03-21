@@ -6,7 +6,7 @@ using DG.Tweening;
 public class FollowCharacter : MonoBehaviour
 {
     #region VARIABLES
-    [SerializeField] Transform player;
+    public Transform player;
     [SerializeField] float recuperationSpeed;
 
     bool isOutside = false;

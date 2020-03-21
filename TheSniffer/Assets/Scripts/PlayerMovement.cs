@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public Joystick joystick;
     Vector3 movement;
 
+    public FollowCharacter followChar;
+    
     [Header("CONCENTRATION")]
     [SerializeField] Camera mainCamera;
     [SerializeField] float timeConcentration = 1.5f;
@@ -19,17 +21,21 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float newFov = 8f;
     [SerializeField] GameObject sniffBar;
     [SerializeField] GameObject arrow;
-    bool isConcentrate = false;
+    public bool isConcentrate = false;
     float initialFov;
     float timer = 0;
 
     [Header("ANIMATION")]
     [SerializeField] Animator animator;
+    [HideInInspector]
+    public bool isPaused = false;
+
     #endregion
 
     #region START
     private void Start()
     {
+        followChar.player = this.transform;
         initialFov = mainCamera.orthographicSize;
     }
     #endregion
@@ -37,41 +43,45 @@ public class PlayerMovement : MonoBehaviour
     #region UPDATE
     void Update()
     {
-        //input teclado
-        //movement.x = Input.GetAxisRaw("Horizontal");
-        //movement.y = Input.GetAxisRaw("Vertical");
-
-        //input mobil
-        movement.x = joystick.Horizontal;
-        movement.y = joystick.Vertical;
-        movement.z = 0;
-
-        ////SNIFF LOGIC
-        if (movement == new Vector3(0, 0, 0))
+        if (!isPaused)
         {
-            if (timer >= timeConcentration && !isConcentrate)
-            {
-                isConcentrate = true;
-                sniffBar.SetActive(true);
-                mainCamera.DOOrthoSize(newFov, speedTransition);
-            }
-            else
-            {
-                timer += Time.deltaTime;
-            }
-        }
-        if (isConcentrate && movement != new Vector3(0, 0, 0))
-        {
-            timer = 0;
-            isConcentrate = false;
-            sniffBar.SetActive(false);
-            mainCamera.DOOrthoSize(initialFov, speedTransition);
-        }
+            //input teclado
+            //movement.x = Input.GetAxisRaw("Horizontal");
+            //movement.y = Input.GetAxisRaw("Vertical");
 
-        ///ANIMATION LOGIC
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
-        animator.SetFloat("Speed", movement.sqrMagnitude);
+            //input mobil
+            movement.x = joystick.Horizontal;
+            movement.y = joystick.Vertical;
+            movement.z = 0;
+
+            ////SNIFF LOGIC
+            if (movement == new Vector3(0, 0, 0))
+            {
+                if (timer >= timeConcentration && !isConcentrate)
+                {
+                    isConcentrate = true;
+                    sniffBar.SetActive(true);
+                    mainCamera.DOOrthoSize(newFov, speedTransition);
+                }
+                else
+                {
+                    timer += Time.deltaTime;
+                }
+            }
+            if (isConcentrate && movement != new Vector3(0, 0, 0))
+            {
+                timer = 0;
+                isConcentrate = false;
+                sniffBar.SetActive(false);
+                mainCamera.DOOrthoSize(initialFov, speedTransition);
+            }
+
+            ///ANIMATION LOGIC
+            animator.SetFloat("Horizontal", movement.x);
+            animator.SetFloat("Vertical", movement.y);
+            animator.SetFloat("Speed", movement.sqrMagnitude);
+        }
+        
     }
 
     #endregion

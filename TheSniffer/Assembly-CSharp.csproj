@@ -162,6 +162,7 @@
     <Compile Include="Assets\Scripts\FollowCharacter.cs" />
     <Compile Include="Assets\Scripts\LockerScript.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\VibrationLogic.cs" />
     <None Include="Assets\Lean\Common\Examples\Shaders\Alpha.shader" />
