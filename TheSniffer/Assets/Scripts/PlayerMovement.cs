@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     public Joystick joystick;
     Vector3 movement;
 
+    public FollowCharacter followChar;
+    
     [Header("CONCENTRATION")]
     [SerializeField] Camera mainCamera;
     [SerializeField] float timeConcentration = 1.5f;
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     #region START
     private void Start()
     {
+        followChar.player = this.transform;
         initialFov = mainCamera.orthographicSize;
     }
     #endregion
