@@ -18,10 +18,10 @@ public class LockerScript : MonoBehaviour
         myAnimator = this.GetComponent<Animator>();
         myVibrationLogic = this.GetComponent<VibrationLogic>();
         myGameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-        if (!hasObject)
-        {
-            myVibrationLogic.enabled = false;
-        }
+        //if (!hasObject)
+        //{
+        //    myVibrationLogic.enabled = false;
+        //}
     }
 
     public void setUp(bool _hasObject)

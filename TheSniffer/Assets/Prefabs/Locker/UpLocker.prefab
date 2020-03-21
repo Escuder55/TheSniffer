@@ -147,6 +147,7 @@ MonoBehaviour:
   minDistance: 0
   numOfRanges: 4
   sniffBar: {fileID: 0}
+  isPaused: 0
 --- !u!65 &2306692552704261221
 BoxCollider:
   m_ObjectHideFlags: 0

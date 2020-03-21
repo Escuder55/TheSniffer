@@ -8,8 +8,20 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Sergio");
-        Debug.Log("Tengo que abrir escena");
+        int randomMap = Random.Range(1, 3);
+        Debug.Log(randomMap);
+
+        switch(randomMap)
+        {
+            case 1:
+                SceneManager.LoadScene("Mapa1");
+                break;
+            case 2:
+                SceneManager.LoadScene("Mapa2");
+                break;
+            default:
+                break;
+        }
     }
 
     public void QuitGame()
