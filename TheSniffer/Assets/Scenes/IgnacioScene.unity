@@ -899,7 +899,7 @@ PrefabInstance:
         type: 3}
       propertyPath: followChar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1281239876}
     - target: {fileID: 157883660, guid: 4fd64b5c30cb93d4795708266b31d1c3, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1106,6 +1106,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1281239876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3767526038329267184, guid: 87c2e3bfa8565f34ba9f281999113557,
+    type: 3}
+  m_PrefabInstance: {fileID: 133480250}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 935a5f57f0e73c6488fab3692b4bd4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1518522477 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3371859760256008658, guid: 4fd64b5c30cb93d4795708266b31d1c3,
