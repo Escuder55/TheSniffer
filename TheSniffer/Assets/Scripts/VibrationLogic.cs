@@ -19,6 +19,9 @@ public class VibrationLogic : MonoBehaviour
 
     [Header("SNIFF BAR")]
     [SerializeField] Image sniffBar;
+
+    [HideInInspector]
+    public bool isPaused = false;
     #endregion
 
     #region START
@@ -32,34 +35,41 @@ public class VibrationLogic : MonoBehaviour
     #region UPDATE
     void Update()
     {
-        distanceToTarget = Vector3.Distance(this.transform.position, player.position);
-
-        if (distanceToTarget <= maxDistance)
+        if (!isPaused)
         {
-            sniffBar.fillAmount = (10 -distanceToTarget) / 10;
+            distanceToTarget = Vector3.Distance(this.transform.position, player.position);
 
-            for (int i = 1; i <= numOfRanges; i++)
+            if (distanceToTarget <= maxDistance)
             {
-                if (distanceToTarget <= maxDistance && distanceToTarget >= maxDistance - rangeDistance * i)
+                sniffBar.fillAmount = (10 - distanceToTarget) / 10;
+
+                for (int i = 1; i <= numOfRanges; i++)
                 {
-                    currentRange = i;
-                    break;
+                    if (distanceToTarget <= maxDistance && distanceToTarget >= maxDistance - rangeDistance * i)
+                    {
+                        currentRange = i;
+                        break;
+                    }
                 }
+
+                timer += Time.deltaTime;
+
+                if (timer >= timeIntensity / currentRange)
+                {
+                    Handheld.Vibrate();
+                    timer = 0;
+                }
+
             }
-
-            timer += Time.deltaTime;
-
-            if (timer >= timeIntensity/currentRange)
+            else
             {
-                Handheld.Vibrate();
                 timer = 0;
             }
+        }
 
-        }
-        else
-        {
-            timer = 0;
-        }
+
+
+        
     }
     #endregion
 
