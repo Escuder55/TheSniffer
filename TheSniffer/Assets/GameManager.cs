@@ -12,12 +12,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject youLose;
     [SerializeField] GameObject youWin;
     // Start is called before the first frame update
+    [SerializeField] AudioSource SoundObjectFound;
+    [SerializeField] AudioSource SoundWin;
+    [SerializeField] AudioSource SoundLose;
 
     [Header("HUD")]
     [SerializeField] Text objectsText;
     [SerializeField] Text timeHUDText;
     [SerializeField] GameObject Joystick;
     [SerializeField] GameObject Sniffbar;
+
+    bool isPlayed = false;
 
     //TIEMPO
     int min;
@@ -70,6 +75,8 @@ public class GameManager : MonoBehaviour
             youWin.SetActive(true);
             Joystick.SetActive(false);
             Sniffbar.SetActive(false);
+            if(!isPlayed) SoundWin.Play();
+            isPlayed = true;
             countdownTimer = 0;
         }
         else
@@ -77,6 +84,8 @@ public class GameManager : MonoBehaviour
             youLose.SetActive(true);
             Joystick.SetActive(false);
             Sniffbar.SetActive(false);
+            if (!isPlayed) SoundLose.Play();
+            isPlayed = true;
             countdownTimer = 0;
         }
     }
@@ -84,6 +93,7 @@ public class GameManager : MonoBehaviour
     public void objectFound()
     {
         objectsFound++;
+        SoundObjectFound.Play();
 
         //ACTUALIZAMOS OBJETOS ENCONTRADOS
         objectsText.text = (objectsFound.ToString() + " / " + totalObjects.ToString());
