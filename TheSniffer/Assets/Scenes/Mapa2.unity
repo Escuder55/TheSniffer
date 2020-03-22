@@ -21260,6 +21260,11 @@ PrefabInstance:
       propertyPath: sniffBar
       value: 
       objectReference: {fileID: 553247062}
+    - target: {fileID: 6350261322912528324, guid: 44980460682a10842a69c68d25ec2b01,
+        type: 3}
+      propertyPath: timeIntensity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 246697297007994169, guid: 44980460682a10842a69c68d25ec2b01,
         type: 3}
       propertyPath: hasObject
